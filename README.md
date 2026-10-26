@@ -28,9 +28,9 @@
 ## Results (test set)
 | Metric | Value |
 |---|---|
-| MAE | X.XX years |
-| RMSE | X.XX years |
-| R² | X.XXX |
+| MAE | years |
+| RMSE |  years |
+| R² | |
 
 
 ## Limitations and ethics
