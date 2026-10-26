@@ -28,9 +28,9 @@
 ## Results (test set)
 | Metric | Value |
 |---|---|
-| MAE | years |
-| RMSE |  years |
-| R² | |
+| MAE | 8.73 years |
+| RMSE | 12.99 years |
+| R² | 56.6% |
 
 
 ## Limitations and ethics
