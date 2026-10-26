@@ -17,3 +17,17 @@
 ## Preprocessing
 > Images are resized to 64×64 and pixel values are scaled between 0 and 1. Sample weights are also used to reduce the bias toward the more common age groups, especially ages 20–40.
 
+
+## Model
+> The model uses a simple dense network with batch normalization and random flipping to improve training. It has several dense layers and one output neuron to predict age.
+> - `Loss`: MAE, the same metric used to evaluate the predictions.
+> - `Optimizer`: Adam.
+> - `Callbacks`: EarlyStopping to keep the best weights and ModelCheckpoint to save the best model based on val_mae.
+
+
+## Limitations and ethics
+> - The model works best with clear, front-facing images. Poor lighting and face coverings may affect its predictions.
+> - The dataset is not balanced across all age groups, genders, and ethnicities, which may lead to different prediction errors.
+> - There are fewer images of children under 5 and adults over 70, so predictions for these ages may be less accurate.
+> - Dense layers do not capture image details as well as CNNs, which may improve performance.
+> - The model should not be used for surveillance, hiring, or legal age verification. Face images should also be handled with care to protect privacy.
