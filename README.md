@@ -25,6 +25,14 @@
 > - `Callbacks`: EarlyStopping to keep the best weights and ModelCheckpoint to save the best model based on val_mae.
 
 
+## Results (test set)
+| Metric | Value |
+|---|---|
+| MAE | X.XX years |
+| RMSE | X.XX years |
+| R² | X.XXX |
+
+
 ## Limitations and ethics
 > - The model works best with clear, front-facing images. Poor lighting and face coverings may affect its predictions.
 > - The dataset is not balanced across all age groups, genders, and ethnicities, which may lead to different prediction errors.
